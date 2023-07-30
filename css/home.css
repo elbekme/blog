@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sen:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Sen", sans-serif;
+}
+
+.container .header {
+  width: 100%;
+  height: 80rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%), url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .header .header-hero {
+  width: 130rem;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 20rem;
+}
+.container .header .header-hero p {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.container .header .header-hero h1 {
+  color: #FFFFFF;
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  font-family: "Sen", sans-serif;
+  padding-right: 30%;
+}
+.container .header .header-hero .p {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  padding-right: 50%;
+}
+.container .header .header-hero .btn {
+  width: 20.4rem;
+  height: 5.6rem;
+  color: #232536;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Sen", sans-serif;
+}
+.container .Post {
+  width: 100%;
+}
+.container .Post .post-list {
+  width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container .category {
+  height: 22rem;
+}
+.container .category .categories {
+  width: 130rem;
+  margin: 0 auto;
+}
+.container .category .categories .box {
+  width: 30rem;
+  border: 1px solid rgb(209, 205, 205);
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.container .category .categories .box p {
+  color: #6D6E76;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+  transition: 0.5 ease-in-out;
+}
+.container .category .categories .box h2 {
+  color: #232536;
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  transition: 0.5 ease-in-out;
+}
+.container .category .categories .box:hover p, .container .category .categories .box:hover h2 {
+  color: white;
+}
+.container .category .categories .box::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #FFD050 0%, #FFD050 100%);
+  transition: 0.5s ease-in;
+  display: block;
+  z-index: -1;
+}
+.container .category .categories .box:hover::before {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=home.css.map */

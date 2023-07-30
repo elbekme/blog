@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sen:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Sen", sans-serif;
+}
+
+.container main {
+  padding-top: 15rem;
+}
+.container main .main-top {
+  width: 130rem;
+  height: 44rem;
+  background: #F4F0F8;
+  margin: 0 auto;
+}
+.container main .main-top .main-top-left {
+  padding: 5rem 3rem 0 6rem;
+}
+.container main .main-top .main-top-left h4 {
+  color: #232536;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.container main .main-top .main-top-left h2 {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.container main .main-top .main-top-left p {
+  font-size: 1.6rem;
+  color: #6D6E76;
+  font-weight: 400;
+  line-height: 3rem;
+  font-family: "Inter", sans-serif;
+}
+.container main .main-top .main-top-right {
+  padding: 5rem 3rem 0 0;
+}
+.container main .main-top .main-top-right h4 {
+  color: #232536;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.container main .main-top .main-top-right h2 {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.container main .main-top .main-top-right p {
+  font-size: 1.6rem;
+  color: #6D6E76;
+  font-weight: 400;
+  line-height: 3rem;
+  font-family: "Inter", sans-serif;
+}
+.container main .main-center {
+  width: 130rem;
+  height: 48rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.container main .main-center .main-center_left {
+  padding: 10rem 15rem 0 0;
+}
+.container main .main-center .main-center_left h2 {
+  color: #232536;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+.container main .main-center .main-center_left h4 {
+  color: #232536;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+.container main .main-center .main-center_left p {
+  color: #232536;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+.container main .main-center .main-center_right {
+  position: relative;
+}
+.container main .main-center .main-center_right .shape {
+  position: absolute;
+  left: -9%;
+  top: 25%;
+  width: 10rem;
+  height: 11.6rem;
+}
+.container main .main-bottom {
+  width: 130rem;
+  height: 51.7rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.container main .main-bottom .main-bottom_left {
+  position: relative;
+  padding-right: 6rem;
+}
+.container main .main-bottom .main-bottom_left .circle {
+  position: absolute;
+  left: 15%;
+  bottom: -7%;
+}
+.container main .main-bottom .main-bottom_right {
+  padding: 10rem 10rem 0 0;
+}
+.container main .main-bottom .main-bottom_right h2 {
+  color: #232536;
+  font-size: 3.6rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.container main .main-bottom .main-bottom_right h4 {
+  color: #232536;
+  font-weight: 700;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+.container main .main-bottom .main-bottom_right p {
+  color: #232536;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sen:wght@400;500;600;700&display=swap');
+$back-color:#FFFFFF;
+$first-color: #232536;
+:root{
+    --back-color:#FFFFFF;
+    --first-color: #232536;
+}
+.dark-theme{
+    --back-color:#000;
+    --first-color:#FFFFFF;
+}
+// .dark-mode {
+//     background-color: black;
+//     color: white;
+//   }
+
+*,
+*::after,
+*::before{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Sen', sans-serif;
+    background: var(--back-color);
+}
+.container{
+    max-width: 100%;
+    background:var(--back-color);
+    height: auto;
+    #backtop{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        z-index: 999;
+        position: fixed;
+        right: 2%;
+        top: 90%;
+    }
+    .navbar{
+        position: fixed;
+        height: 8rem;
+        background-color: #232536;
+        z-index: 1; 
+        #navbar-shrink{
+            padding: 30px 0;
+        } 
+        .navbar-item{
+            width: 130rem;
+            margin: 0 auto;
+            height: 100%;
+            .navbar-left{
+                text-align: center;
+            }
+            .navbar-right{
+                ul{
+                    align-items: center;
+                    gap: 2rem;
+                    li{
+                        height: 100%;
+                        transition: all .3s;
+                        #icon{
+                            background: var(--back-color);
+                            cursor: pointer;
+                            border-radius: 50%;
+                        }
+                        a{
+                            color: #FFFFFF;
+                            // color: var(--back-color);
+                            font-weight: 400;
+                            font-size: 1.8rem;
+                            transition: all .3s;
+                            font-family: 'Inter';
+                            &:hover{
+                                color: rgb(119, 116, 116);
+                            }
+                            .btn{
+                                width: 14.7rem;
+                                height: 5rem;
+                                color: #232536;
+                                font-size: 1.8rem;
+                                font-weight: 700;
+                                overflow: hidden;
+                                font-family: 'Sen', sans-serif;
+                                position: relative;
+                                z-index: 1;
+                            }
+                            .btn::before{
+                                content: '';
+                                width: 0;
+                                height: 10rem;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background: linear-gradient(to right,#f9f047 0%,#f9f047 100%);
+                                transition: .5s ease;
+                                display: block;
+                                z-index: -1;
+                            }
+                            .btn:hover::before{
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        padding-top: 15rem;
+        color: #232426;
+        font-size: 4.8rem;
+        font-weight: 700;
+        font-family: 'Sen', sans-serif;
+        line-height: 6.4rem;
+    }
+    .main{
+        form{
+            div{
+                height: 7.6rem;
+                input{
+                    height: 100%;
+                    padding-left: 2rem;
+                    color: #232536;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    font-family: 'Inter', sans-serif;
+                }
+                a{
+                    .btn-submit{
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                        font-family: 'Sen', sans-serif;
+                        height: 6rem;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background: #232536;
+        height: 16.4rem;
+        margin-top: 15rem;
+        .footer-item{
+            width: 130rem;
+            margin: 0 auto;
+            .footer-left{
+                color: rgb(131, 127, 127);
+                font-size: 1.6rem;
+                font-weight: 400;
+                font-family: 'Inter',sans-serif;
+                text-align: left;
+                padding-top: 3rem;
+            }
+            .footer-right{
+                gap: 2.5rem;
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Blog | Login page</title>
+</head>
+<body>
+    <div class="container m-0 p-0 bg-light">
+        <div id="backtop">
+            <a href="#"><img width="50px" height="50px" src="../img/top.png" alt="top"></a>
+        </div>
+        <nav class="navbar w-100 ">
+            <div class="navbar-item d-flex justify-content-between align-items-center text-center">
+                <div class="navbar-left">
+                    <img src="../img/nav-logo (3).png" alt="">
+                </div>
+                <div class="navbar-right">
+                    <ul class=" d-flex">
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">Register</a>
+                        </li>
+                        <li>
+                            <a href="./login.html">
+                                <button class="btn bg-light">Login</button>
+                            </a>
+                        </li>
+                        <li>
+                            <img id="icon" width="45px" height="45px" src="../img/mooon.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+          <h1 class=" text-center mb-5">Login</h1>
+
+          <div class="main row justify-content-center mb-4">
+            <form class="col-6">
+                <div class=" mb-5">
+                    <label for="userName"></label>
+                    <input class="form-control" required type="text" id="username" name="userName" placeholder="Username">
+                </div>
+                <div class=" mb-5">
+                    <label for="password"></label>
+                    <input class="form-control" required type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class=" mt-5">
+                    <a href="./home.html">
+                            <input onclick="auth()"  value="Login" type="submit" class="w-100 btn btn-warning btn-submit">
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <footer class=" w-100">
+            <div class="footer-item h-100  d-flex justify-content-between align-items-center text-center">
+                <div class="footer-left">
+                    <p>Finstreet 118 2561 Fintown</p>
+                    <p>Hello@finsweet.com  020 7993 2905</p>
+                </div>
+                <div class="footer-right">
+                    <img src="../img/facebook.png" alt="">
+                    <img src="../img/twitter.png" alt="">
+                    <img src="../img/instagram.png" alt="">
+                    <img src="../img/Negative.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function auth(){
+    var user = document.getElementById("username").value;
+    var pass = document.querySelector('#password').value;
+    if(user != '' && pass != ''){
+        window.location.assign("home.html");
+        alert("Login succesfully");
+    }
+}
+
+let icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme")
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "../img/mooon.png";
+    
+        }else{
+            icon.src= "../img/mooon.png";
+        }
+}
+    </script>
+</body>
+</html>

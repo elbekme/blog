@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sen:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Sen", sans-serif;
+}
+
+.container .Post {
+  width: 100%;
+}
+.container .Post .post-list {
+  width: 130rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.container .form-search_input {
+  width: 130rem;
+  height: 100%;
+  margin: 0 auto;
+}
+.container .form-search_input .form .input {
+  height: 7.6rem;
+  border: 1px solid rgba(109, 110, 118, 0.5019607843);
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  color: #232536;
+}/*# sourceMappingURL=allPost.css.map */
